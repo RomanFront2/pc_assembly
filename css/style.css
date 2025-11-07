@@ -51,11 +51,22 @@ h6 {
   margin: 0 auto;
 }
 
+:root {
+  --text-size-medium: 1.6rem;
+}
+
+.block__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   border-radius: 5rem;
   padding: 1rem 3rem;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 150%;
 }
 
@@ -85,7 +96,7 @@ h6 {
 }
 
 .header__nav a {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 150%;
 }
 
@@ -132,7 +143,11 @@ h6 {
   margin-bottom: 7.6rem;
 }
 
-.main-display__button {
+.main-display__button,
+.assembly__button {
+  font-weight: 700;
+  font-size: var(--text-size-medium);
+  line-height: 150%;
   background: linear-gradient(141deg, #df5950 0%, #451046 100%);
 }
 
@@ -140,10 +155,6 @@ h6 {
   width: 10.2rem;
   height: 11.2rem;
   background: #121212;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .timer__item:not(:last-child) {
@@ -157,7 +168,7 @@ h6 {
 }
 
 .timer__text {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 140%;
   opacity: 0.4;
 }
@@ -190,7 +201,7 @@ h6 {
 }
 
 .work__descriptoon {
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
 }
 
@@ -202,10 +213,16 @@ h6 {
 .process__img {
   width: 9rem;
   height: 4.5rem;
+  margin-right: 2rem;
+}
+
+.process .process__img {
+  transform: rotate(45deg);
 }
 
 .process__header {
   margin-bottom: 4.9rem;
+  padding-top: 1rem;
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 140%;
@@ -218,7 +235,7 @@ h6 {
 .process__description {
   max-width: 41.1rem;
   margin-bottom: 8rem;
-  font-size: 1.6rem;
+  font-size: var(--text-size-medium);
   line-height: 160%;
   opacity: 0.5;
 }
@@ -255,4 +272,97 @@ h6 {
   font-size: 1.4rem;
   line-height: 160%;
   opacity: 0.5;
+}
+
+.command {
+  padding-bottom: 20rem;
+}
+
+.command__title {
+  margin-bottom: 11.9rem;
+}
+
+.command__header {
+  margin-bottom: 0;
+}
+
+.command__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.command__img {
+  width: 19rem;
+  height: 19rem;
+  margin-bottom: 4rem;
+  border-radius: 50%;
+}
+
+.command_name {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 140%;
+}
+
+.command__profession {
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.command__link {
+  font-size: var(--text-size-medium);
+  line-height: 150%;
+  border: 0.1rem solid #fff;
+  border-radius: 50px;
+}
+
+.assembly {
+  padding-bottom: 24.4rem;
+}
+
+.assembly_header {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+}
+
+.assembly__description {
+  margin-bottom: 4.52rem;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  opacity: 0.5;
+}
+
+.assembly__button {
+  margin-bottom: 5.08rem;
+}
+
+.assembly__socials {
+  display: flex;
+}
+
+.assembly__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+}
+
+.assembly__item img {
+  width: 50%;
+  height: 50%;
+}
+
+.assembly__item:not(:last-child) {
+  margin-right: 3rem;
 }
